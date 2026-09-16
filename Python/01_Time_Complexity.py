@@ -4,6 +4,8 @@ print("Data means Information .")
 print("Structure(Where store):( Array | LL | Stack | Queue | Tree | Graph ).") 
 print("Algorithums : Set of instructions. ") 
 
+print("Rate of increase in time with respect to input size. ") 
+
 print("--------------------------")
 print(" Comparision \n")
 print(" 1 < loglogn < logn < n < nSqr2 < nsqr3 < ...< 2powN \n ")
