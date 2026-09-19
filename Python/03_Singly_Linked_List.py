@@ -1,4 +1,4 @@
-print("So using class i create userdefine data type / custom datatype in which store info and next path")
+# print("So using class i create userdefine data type / custom datatype in which store info and next path")
 
 class Node:
     def __init__(self , info , next=None):
@@ -21,6 +21,38 @@ class SinglyLinkedlist:
         else:
             self.head = temp
 
+    def insertAtBeginning(self , value):
+        temp=Node(value)
+        temp.next = self.head
+        self.head = temp
+
+    def insertAtMiddle(self,value,X):
+        temp = Node(value)
+        t1=self.head
+
+        while(t1.next != None):
+            if(t1.data == X):
+                temp.next = t1.next
+                t1.next = temp
+            t1=t1.next
+
+    def deleteLL(self,value):
+        t1=self.head
+        prev=t1
+        if(t1.data == value):
+            self.head = t1.next
+
+        while(t1.next != None):
+            if(t1.data == value):
+                prev.next = t1.next
+                break
+            else:
+                prev = t1
+                t1 = t1.next
+        if(t1.data == value):
+            prev.next = None
+
+
     def printLL(self):
         t1 = self.head
         while(t1.next != None):
@@ -31,5 +63,11 @@ class SinglyLinkedlist:
 obj = SinglyLinkedlist()
 obj.insertAtEnd(10)
 obj.insertAtEnd(20)
+obj.insertAtBeginning(5)
 obj.insertAtEnd(30)
+obj.insertAtMiddle(40,20)
+obj.insertAtMiddle(50,40)
+obj.insertAtMiddle(80,50)
+obj.deleteLL(30)
+obj.deleteLL(5)
 obj.printLL()
