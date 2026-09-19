@@ -1,4 +1,4 @@
-# print("So using class i create userdefine data type / custom datatype in which store info and next path")
+print("So using class i create userdefine data type / custom datatype in which store info and next path")
 
 class Node:
     def __init__(self , info , next=None):
