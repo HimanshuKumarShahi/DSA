@@ -32,3 +32,20 @@ switch (true) {
     console.log("False! 2 is greater than 1");
     break;
 }
+
+let num = 0.2 + 0.3;
+
+switch (num) {
+  case 0.5:
+    console.log("Good");
+    console.log(num);
+    
+    break;
+    case 0.3:
+        console.log("Not Good");
+        console.log(num);
+        break;
+        default:
+            console.log("Invalid WoW");
+            console.log(num);   // Precision Error here 
+}
