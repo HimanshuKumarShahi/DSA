@@ -23,3 +23,12 @@ switch (day) {
     console.log("Sunday");
     break;
 }
+
+switch (true) {
+  case 3 > 2:
+    console.log("True! 3 is greater than 2");
+    break;
+  case 1 > 2:
+    console.log("False! 2 is greater than 1");
+    break;
+}
