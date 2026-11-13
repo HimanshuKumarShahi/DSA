@@ -1,16 +1,20 @@
-let n = 5;
+let n = 9;
 
-if (isNaN(n)) {
-  console.log("Invalid Number.");
+if (n === null) {
+  console.log("Cancelled");
 } else {
-  if (n > 0) {
-    let sum = 0;
-    console.log("Is positive");
-    for (let i = 1; i <= n; i++) {
-      sum += i;
-    }
-    console.log(`Sum of natural number from 1 to ${n} is = ${sum}`);
+  if (isNaN(n)) {
+    console.log("Invalid Number.");
   } else {
-    console.log("Number should be positive or more than zero.");
+    if (n > 0) {
+      let sum = 0;
+      console.log("Is positive");
+      for (let i = 1; i <= n; i++) {
+        sum += i;
+      }
+      console.log(`Sum of natural number from 1 to ${n} is = ${sum}`);
+    } else {
+      console.log("Number should be positive or more than zero.");
+    }
   }
 }
