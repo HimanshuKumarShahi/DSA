@@ -1,7 +1,7 @@
 let keepRunning = true;
 
 while (keepRunning) {
-  let operation = "/";
+  let operation = "*";
 
   if (
     operation === null ||
@@ -35,7 +35,7 @@ while (keepRunning) {
   }
 
   if (operation == "/") {
-    console.log("Division:", Math.floor(a / b));
+    console.log("Division:", a / b);
     break;
   }
 
@@ -48,4 +48,5 @@ while (keepRunning) {
     console.log("Multiplication:", a * b);
     break;
   }
+  console.log("Confirm do you want to exit or perform more operations.");
 }
