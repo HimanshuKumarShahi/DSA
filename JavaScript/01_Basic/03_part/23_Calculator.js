@@ -1,7 +1,8 @@
 let keepRunning = true;
 
 while (keepRunning) {
-  let operation = "*";
+  let prompt = require('prompt-sync')();
+  let operation = prompt("Give your operation or exit.");
 
   if (
     operation === null ||
@@ -14,8 +15,8 @@ while (keepRunning) {
     break;
   }
 
-  let a = 45,
-    b = 27;
+  let a = prompt("Value of Number 1->"),
+    b = prompt("Value of Number 2->");
   if (isNaN(a) || isNaN(b)) {
     console.log("Please insert valid input!");
     break;
