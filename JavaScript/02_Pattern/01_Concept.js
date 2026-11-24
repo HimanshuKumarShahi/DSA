@@ -1,13 +1,13 @@
 // "Hello World"
 
-console.log("Hello");
-console.log("World");
+// console.log("Hello");
+// console.log("World");
 
 // Second method
 // work only in Node Environment.
 
-process.stdout.write("Hello ");
-process.stdout.write("World");
+// process.stdout.write("Hello ");
+// process.stdout.write("World");
 
 let prompt = require("prompt-sync")();
 let n = Number(prompt("Enter a Number:"));
